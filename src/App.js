@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React , {Component, useState, useEffect} from 'react';
 import './App.css';
+import Navbar from './components/chart1/Navbar';
+import FirstGraph from './components/chart1/FirstGraph';
+import Barchart from './components/chart1/SecondGraph';
 
 function App() {
   return (
+    <div>
+      <Navbar/>
+      <br></br>
+
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+      <FirstGraph/>
+      <Barchart/>
+    </div>
     </div>
   );
 }
